@@ -16,7 +16,7 @@
         "type": "path",
         "column": "_id",
         "index": {
-            "name": "HTML"
+            "name": "HTML5"
         }
     }
 }

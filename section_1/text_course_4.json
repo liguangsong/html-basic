@@ -1,0 +1,19 @@
+{
+    "title": "HTML属性",
+    "type": "topic",
+    "order": 3,
+    "desc_file": true,
+    "question": {
+        "content": "下列那种属性的写法是错误的？",
+        "options": [
+            "<a class= link button >我是一个链接</a>",
+            "<h1 align=\"center\">我是一个居中的段落标题</h1>",
+            "<input type=\"text\" />",
+            "<img src = 'background.gif' />"
+        ]
+    },
+    "answer": {
+        "value": "<a class= link button >我是一个链接</a>",
+        "explain_file":true
+    }
+}

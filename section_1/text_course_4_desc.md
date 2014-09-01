@@ -14,5 +14,22 @@ HTML标签是我们用以表达的页面内容及结构的。
 
 a是标签名，href是属性名，“http://www.codefordream.com”是属性值。如前所述，属性被写在开始标签里。
 
+有一些属性是某些元素专有的,比如a的href属性.
 
+有一些属性是global的,就是说每一个HTML元素都拥有这些属性.在HTML5里有下列元素:
+
+- accesskey
+- class 用来指定当前元素使用css里定义的哪个的class,又是也只是被用来标明语义
+- contenteditable 元素里的文字是否可以被修改
+- contextmenu
+- dir
+- draggable 标明元素是否可以被拖拽
+- dropzone
+- hidden
+- id 元素的id,一个页面只能有一个
+- lang
+- spellcheck
+- style 指定元素的样式,要用css语言
+- tabindex
+- title 标题
 

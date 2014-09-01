@@ -15,4 +15,4 @@ meta 元素可提供有关页面的元信息（meta-information），比如针�
     
     <meta http-equiv="charset" content="utf-8">
 
-script标签常用来引入javascript，link则常用来引入css。它们不止用来做这些事情，但是一般也没人用它们来做别的。
+script标签常用来引入javascript和html template，link则常用来引入css。它们不止用来做这些事情，但是一般也没人用它们来做别的。

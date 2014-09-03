@@ -7,6 +7,7 @@ HTML标签是我们用以表达的页面内容及结构的。
 - 属性值可以不使用引号，当值里有空格等特殊符号的时候，需要双引号或单引号引起，但是不建议不是用引号。
 - 属性总是在 HTML 元素的开始标签中规定。
 - 属性名和属性值对大小写不敏感
+- 一个元素可以有多个属性
 
 举例来看下面的是一个页面上最常见的链接的HTML代码：
 
@@ -16,12 +17,12 @@ a是标签名，href是属性名，“http://www.codefordream.com”是属性值
 
 有一些属性是某些元素专有的,比如a的href属性.
 
-有一些属性是global的,就是说每一个HTML元素都拥有这些属性.在HTML5里有下列元素:
+有一些属性是global的,就是说每一个HTML元素都拥有这些属性.在HTML5里有下列属性是global的:
 
-- accesskey
+- accesskey 用来设置快速使当前元素获得焦点的快捷键(不同的操作系统下,不同的浏览器里要配以不同的功能键)
 - class 用来指定当前元素使用css里定义的哪个的class,又是也只是被用来标明语义
-- contenteditable 元素里的文字是否可以被修改
-- contextmenu
+- contenteditable 元素里的内容是否可以被修改
+- contextmenu 
 - dir
 - draggable 标明元素是否可以被拖拽
 - dropzone

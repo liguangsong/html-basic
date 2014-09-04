@@ -1,0 +1,3 @@
+- 我们要写出html5的doctype，html，head和body。
+- 我们要先用meta给页面配置好content-type，设置字符集为utf-8
+- 然后我们要给页面加个title，title的内容是：“我是标题”

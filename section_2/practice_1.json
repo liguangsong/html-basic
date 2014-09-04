@@ -1,0 +1,33 @@
+{
+    "name": "一个HTML5页面的框架",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "在这个练习里，我们练习写一个最简的HTML页面",
+    "desc_file": true,
+    "step_desc_file": true,
+    "tips_file": true,
+    "answer_file": true,
+
+    "project_dir": "/practices",
+    "specs_dir": "/specs",
+    "paths": {
+        "spec": "/specs/section_2/practice_1",
+        "src": ["/lib/css-parser"]
+    },
+    "files": [
+        {
+            "name": "challenge.html",
+            "path": "/practices/section_2/practice_1"
+        },
+        {
+            "name": "practice.html",
+            "path": "/practices/section_2/practice_1"
+        }
+    ],
+    "spec": {
+        "name": "challenge.html",
+        "path": "/practices/section_2/practice_1/"
+    },
+    "order": 0
+}

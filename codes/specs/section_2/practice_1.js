@@ -8,9 +8,9 @@ describe('practice-2-1', function () {
 
     beforeEach(function(done) {
         $.get("practice.html").then(function(data) {
-            var builder =new Tautologistics.NodeHtmlParser.HtmlBuilder(function(){}, {})
-            var parser = new Tautologistics.NodeHtmlParser.Parser(builder, {})
-            parser.reset()
+            var builder =new Tautologistics.NodeHtmlParser.HtmlBuilder(function(){}, {});
+            var parser = new Tautologistics.NodeHtmlParser.Parser(builder, {});
+            parser.reset();
             parser.parseComplete(data);
 
             html_object = _(builder.dom).filter(html_tag);

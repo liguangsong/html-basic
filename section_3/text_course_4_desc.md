@@ -1,5 +1,6 @@
-- `<style>`允许你在html文档中定义css样式   
-- `<style>`有三个本地属性: type, media, scoped ('scoped'属性是在html5中定义的)     
+`<style>`允许你在html文档中定义css样式   
+
+`<style>`有三个本地属性: type, media, scoped ('scoped'属性是在html5中定义的)     
 
 下面是使用`<style>`的一个例子:
 

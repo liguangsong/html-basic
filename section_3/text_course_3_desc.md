@@ -1,10 +1,15 @@
 
-- `<meta>` 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。  
-- `<meta>` 标签位于文档的头部，不包含任何内容。`<meta>` 标签的属性定义了与文档相关联的名称/值对。    
-- `<meta>` 标签有多种不同的用途和表现方式.一个html文档中可以包含多个`<meta>`标签.     
-- `<meta>` 标签永远位于 head 元素内部。     
-- 元数据总是以名称/值的形式被成对传递的。       
-- `<meta>`有几个常见的本地属性:name,content,charset以及http-equiv,content属性始终要和name属性或http-equiv属性一起使用。    
+`<meta>` 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
+  
+`<meta>` 标签位于文档的头部，不包含任何内容。`<meta>` 标签的属性定义了与文档相关联的名称/值对。 
+   
+`<meta>` 标签有多种不同的用途和表现方式.一个html文档中可以包含多个`<meta>`标签.
+     
+`<meta>` 标签永远位于 head 元素内部。
+     
+元数据总是以名称/值的形式被成对传递的。 
+      
+`<meta>`有几个常见的本地属性:name,content,charset以及http-equiv,content属性始终要和name属性或http-equiv属性一起使用。    
 
 常见的name属性值(把content属性关联到一个名称)有:   
     &nbsp;&nbsp;&nbsp; author : 指定当前页面的作者   

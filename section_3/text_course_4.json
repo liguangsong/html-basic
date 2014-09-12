@@ -1,19 +1,6 @@
 {
-    "title": "<style>标签,内联或者外联css样式",
+    "title": "<style>,在html中定义样式",
     "type": "topic",
     "order": 3,
-    "desc_file": true,
-    "question": {
-        "content": "下面对<base>叙述不正确的是？",
-        "options": [
-            "<base>是一个单标签",
-            "<base>定义了当前文档中所有链接的基本路径",
-            "<base>和<title>是同级的兄弟关系",
-            "<base>有两个基本属性:href和target"
-        ]
-    },
-    "answer": {
-        "value": "<base>定义了当前文档中所有链接的基本路径",
-        "explain_file":true
-    }
+    "desc_file": true
 }

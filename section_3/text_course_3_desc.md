@@ -1,22 +1,22 @@
 
-*`<meta>` 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。  
-*`<meta>` 标签位于文档的头部，不包含任何内容。`<meta>` 标签的属性定义了与文档相关联的名称/值对。    
-*`<meta>` 标签有多种不同的用途和表现方式.一个html文档中可以包含多个`<meta>`标签.           
-*`<meta>` 标签永远位于 head 元素内部。         
-*元数据总是以名称/值的形式被成对传递的。       
-*`<meta>`有几个常见的本地属性:name,content,charset以及http-equiv,content属性始终要和name属性或http-equiv属性一起使用。    
+- `<meta>` 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。  
+- `<meta>` 标签位于文档的头部，不包含任何内容。`<meta>` 标签的属性定义了与文档相关联的名称/值对。    
+- `<meta>` 标签有多种不同的用途和表现方式.一个html文档中可以包含多个`<meta>`标签.     
+- `<meta>` 标签永远位于 head 元素内部。     
+- 元数据总是以名称/值的形式被成对传递的。       
+- `<meta>`有几个常见的本地属性:name,content,charset以及http-equiv,content属性始终要和name属性或http-equiv属性一起使用。    
 
 常见的name属性值(把content属性关联到一个名称)有:   
-     &emsp;&emsp;author : 指定当前页面的作者   
-     &emsp;&emsp;description : 对当前页面的描述   
-     &emsp;&emsp;generator : 指定生成该页面的软件的名称     
-     &emsp;&emsp;keywords : 指定该页面的关键字(主要用于搜索引擎对本页面的搜索,指定恰当的关键字,有利于搜索引擎找到本页面)    
+    &nbsp;&nbsp;&nbsp; author : 指定当前页面的作者   
+    &nbsp;&nbsp;&nbsp; description : 对当前页面的描述   
+    &nbsp;&nbsp;&nbsp; generator : 指定生成该页面的软件的名称     
+    &nbsp;&nbsp;&nbsp; keywords : 指定该页面的关键字(主要用于搜索引擎对本页面的搜索,指定恰当的关键字,有利于搜索引擎找到本页面)    
 
 常见的http-equiv属性值(把content属性关联到http头部)有:       
-    &emsp;&emsp;content-type : 指定文档类型     
-    &emsp;&emsp;expires : 用于指定文档过期的时间         
-    &emsp;&emsp;refresh : 用于文档的自刷新         
-    &emsp;&emsp;set-cookie : 用于设置cookie       
+    &nbsp;&nbsp;&nbsp; content-type : 指定文档类型     
+    &nbsp;&nbsp;&nbsp; expires : 用于指定文档过期的时间         
+    &nbsp;&nbsp;&nbsp; refresh : 用于文档的自刷新         
+    &nbsp;&nbsp;&nbsp; set-cookie : 用于设置cookie       
 
 下面是一个使用`<meta>`页面例子:
 

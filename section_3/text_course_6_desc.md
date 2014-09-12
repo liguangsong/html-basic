@@ -125,8 +125,48 @@ js脚本直接写在`<script>`标签中:
         </head>
         <body>
             <p>This is a test.</p>
-            <a href="http://java2s.com">java2s.com</a>
+            <a href="http://www.codefordream.com">CodeForDream</a>
         </body>
     </html>
     
 使用异步属性的脚本可能不会在它们定义的顺序被执行.这使得异步功能不适用于依赖于其它脚本定义的函数或值的脚本.
+
+###`<noscript>`标签
+当用户浏览器不支持相应的脚本程序或者禁用了脚本解释器,就会显示`<noscript>`的内容.   
+下面的例子,当用户浏览器不支持脚本时,会显示提示信息:
+
+    <!DOCTYPE HTML>
+    <html>
+        <head>
+            <script defer src="simple2.js"></script>
+            <noscript>
+                <h1>Javascript is required!</h1>
+                <p>You  cannot use  this page  without Javascript</p>
+            </noscript>
+        </head>
+        <body>
+           <p>This is a test.</p>
+           <a href="http://www.codefordream.com">Visit CodeForDream</a>
+        </body>
+    </html>
+
+页面的其余部分将正常执行,元素中的内容仍然会显示.   
+可以在同一页面中使用多个`<noscript>`标签.
+
+当用户浏览器不支持脚本时,可以在`<noscript>`中使用`<meta>`标签将用户重定向到指定的页面.例如:
+
+    <!DOCTYPE HTML>
+    <html>
+        <head>
+            <script defer src="simple2.js"></script>
+            <noscript>
+               <meta http-equiv="refresh"  content="0; http://www.codefordream.com"/>
+            </noscript>
+        </head>
+        <body>
+           <p>This is a test.</p>
+           <a href="http://www.codefordream.com">CodeForDream</a>
+        </body>
+    </html>
+   
+当用户浏览器不支持脚本时,会被重定向到www.codefordream.com网页. 

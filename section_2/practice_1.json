@@ -11,23 +11,16 @@
 
     "project_dir": "/practices",
     "specs_dir": "/specs",
-    "paths": {
-        "spec": "/specs/section_2/practice_1",
-        "src": ["/lib/css-parser"]
-    },
     "files": [
-        {
-            "name": "challenge.html",
-            "path": "/practices/section_2/practice_1"
-        },
         {
             "name": "practice.html",
             "path": "/practices/section_2/practice_1"
         }
     ],
-    "spec": {
-        "name": "challenge.html",
-        "path": "/practices/section_2/practice_1/"
+    "runner":{
+        "name":"challenge.html",
+        "path":"/practices/section_2/practice_1",
+        "run_files":["htmlparser", "../specs/section_2/practice_1"]
     },
     "order": 0
 }

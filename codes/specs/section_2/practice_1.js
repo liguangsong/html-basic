@@ -1,6 +1,10 @@
 
 describe('practice-2-1', function () {
 
+//    it('test', function() {
+//        expect($('#test').text()).toBe("HelloWorld!");
+//    });
+
     var html_object;
     var html_tag = function (element) {
         return element.type !== "text";
@@ -14,7 +18,7 @@ describe('practice-2-1', function () {
             parser.parseComplete(data);
 
             html_object = _(builder.dom).filter(html_tag);
-//            console.log(JSON.stringify(html_object));
+            console.log(JSON.stringify(html_object));
             done();
         });
     });

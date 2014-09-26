@@ -1,3 +1,6 @@
+/**
+ * Created by chenyu on 14-9-26.
+ */
 describe('practice-5-1', function () {
 
 //    it('test', function() {
@@ -63,17 +66,31 @@ describe('practice-5-1', function () {
         done();
     });
 
-    it("body标签的子标签有div，设置div的具体属性", function(done){
+    it("div1嵌套div3，div1与div2并列展示", function(done){
         var html_element_children = _(html_object[1].children).filter(html_tag);
         var body_element_children = _(html_element_children[1].children).filter(html_tag);
-        var div_element = body_element_children[1];
+        var div1_element = body_element_children[1];
+        console.log(body_element_children);
+        console.log(div1_element.children[3]);
+        var div3_element = div1_element.children[3];
+        var div2_element = body_element_children[2];
 
-        var div_dom_element = $("<"+div_element.raw+">");
+        var div1_dom_element = $("<"+div1_element.raw+">");
+        var div2_dom_element = $("<"+div2_element.raw+">");
+        var div3_dom_element = $("<"+div3_element.raw+">");
+        expect(div1_dom_element.attr("id")).toBe("div1");
+        expect(div3_dom_element.attr("id")).toBe("div3");
+        expect(div2_dom_element.attr("id")).toBe("div2");
 
-        var arr_correct_attr = ["position:absolute", "height:200px", "width:200px", "background-color:#00aaaa", "left:30px", "top:30px"]
-        var flag = judge_attrrbute_is_correct(div_dom_element,arr_correct_attr);
-        expect(div_dom_element.attr("id")).toBe("test");
-        expect(flag).toBe(true);
+        var arr1_correct_attr = ["position:absolute", "height:200px", "width:200px", "background-color:#00aaaa", "left:30px", "top:30px"];
+        var arr2_correct_attr = ["position:absolute", "height:200px", "width:200px", "background-color:#eeff22", "left:30px", "top:250px"];
+        var arr3_correct_attr = ["position:absolute", "height:150px", "width:150px", "background-color:#f06008", "left:25px", "top:35px"];
+        var flag1 = judge_attrrbute_is_correct(div1_dom_element,arr1_correct_attr);
+        var flag2 = judge_attrrbute_is_correct(div2_dom_element,arr2_correct_attr);
+        var flag3 = judge_attrrbute_is_correct(div3_dom_element,arr3_correct_attr);
+        expect(flag1).toBe(true);
+        expect(flag2).toBe(true);
+        expect(flag3).toBe(true);
         done();
     });
 

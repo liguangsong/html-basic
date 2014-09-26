@@ -12,7 +12,7 @@
 
 <img src="http://html-basic-images.qiniudn.com/section_5_text_course_3.png" style="width:500px"/>
 
-嵌套图层可以保证子层永远位于父层之上。而且，当我们修改div1时，不会影响到div2以及整体的布局，只会改变div1。
+嵌套图层可以保证子层永远位于父层之上。而且，当我们修改div1时，不会影响到div2以及整体的布局，只会改变div1，所以，在网页设计中，我们提倡使用div布局页面。
 
     <div id="divall" style="position: absolute;width: 320px;height: 300px;left: 20px;top: 30px;">
         <div id="div1" class="border" style="position: absolute;width: 100px;height: 100px;left: 30px;top: 30px;">

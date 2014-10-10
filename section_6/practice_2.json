@@ -1,0 +1,26 @@
+{
+    "name": "布局文档内容",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "在这个练习里，我们练习使用合适意义的标签布局一篇文章",
+    "desc_file": true,
+    "step_desc_file": true,
+    "tips_file": true,
+    "answer_file": true,
+
+    "project_dir": "/practices",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "practice.html",
+            "path": "/practices/section_6/practice_2"
+        }
+    ],
+    "runner":{
+        "name":"practice.html",
+        "path":"/practices/section_6/practice_2",
+        "run_files":["htmlparser","../specs/section_6/practice_2"]
+    },
+    "order": 1
+}

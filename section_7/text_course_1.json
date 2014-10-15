@@ -1,0 +1,19 @@
+{
+    "title": "网页中与Text有关的标签",
+    "desc_file": true,
+    "type": "topic",
+    "order": 0,
+    "question": {
+        "content": "下面的哪一组标签可以实现标签内的文字缩进？",
+        "options": [
+            "<blockquote>显示文字缩进</blockquote>",
+            "<pre>显示文字缩进</pre>",
+            "<p>显示文字缩进</p>",
+            "<pre>显  示  文  字  缩  进</pre>"
+        ]
+    },
+    "answer": {
+        "value": "<blockquote>显示文字缩进</blockquote>",
+        "explain_file": true
+    }
+}

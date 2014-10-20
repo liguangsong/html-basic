@@ -1,0 +1,19 @@
+{
+    "title": "网页中的链接",
+    "desc_file": true,
+    "type": "topic",
+    "order": 0,
+    "question": {
+        "content": "<a href=\"http://www.baidu.com\">百度一下</a> 点击这段代码实现的连接，会以以下哪种方式打开？",
+        "options": [
+            "在浏览器一个新的窗口中打开链接文档",
+            "在当前窗口当前框架中打开",
+            "在浏览器当前窗口打开",
+            "当前文档框架的父框架中打开"
+        ]
+    },
+    "answer": {
+        "value": "在当前窗口当前框架中打开",
+        "explain_file": true
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "title": "拓展表格",
+    "desc_file": true,
+    "type": "topic",
+    "order": 2,
+    "question": {
+        "content": "实现合并两列成一列，应使用以下哪个属性？",
+        "options": [
+            "colgroup=\"2\"",
+            "col=\"2\"",
+            "span=\"2\"",
+            "colspan=\"2\""
+        ]
+    },
+    "answer": {
+        "value": "colspan=\"2\"",
+        "explain_file": true
+    }
+}

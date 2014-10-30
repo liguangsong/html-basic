@@ -1,0 +1,19 @@
+{
+    "title": "input标签的使用",
+    "desc_file": true,
+    "type": "topic",
+    "order": 4,
+    "question": {
+        "content": "写一个可见行数为10、每行显示20个字符、文本框为必填项的多行文本框",
+        "options": [
+            "<textarea rows=\"10\" cols=\"20\" ></textarea>",
+            "<textarea rows=\"10\" cols=\"20\" autofocus></textarea>",
+            "<textarea rows=\"20\" cols=\"10\" required></textarea>",
+            "<textarea rows=\"10\" cols=\"20\" required></textarea>"
+        ]
+    },
+    "answer": {
+        "value": "<textarea rows=\"10\" cols=\"20\" required></textarea>",
+        "explain_file": true
+    }
+}

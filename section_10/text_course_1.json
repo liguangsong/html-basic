@@ -1,0 +1,19 @@
+{
+    "title": "Form表单的基本使用",
+    "desc_file": true,
+    "type": "topic",
+    "order": 0,
+    "question": {
+        "content": "关于表单form的属性的说法错误的是？",
+        "options": [
+            "action设置URL将表单数据发送到相应的服务器。",
+            "method设置发送表单数据的方式",
+            "accept-charset设置在发送到服务器之前对表单数据的编码",
+            "target设置在何处打开action属性的URL。"
+        ]
+    },
+    "answer": {
+        "value": "accept-charset设置在发送到服务器之前对表单数据的编码",
+        "explain_file": true
+    }
+}

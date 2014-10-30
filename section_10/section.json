@@ -1,0 +1,6 @@
+{
+    "name": "HTML Form学习",
+    "desc": "本章我们学习关于form表单的知识，在html中，他们经常用来收集用户的输入信息，并传送到服务器。",
+    "order": 9,
+    "type": "normal"
+}

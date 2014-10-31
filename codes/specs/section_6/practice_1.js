@@ -91,7 +91,8 @@ describe('practice-6-1', function () {
         var nav_element = body_element_children[2];
         console.log(body_element_children);
         expect(nav_element.raw).toBe("nav");
-        expect(nav_element.children[1].raw).toBe("a href=\"http://www.codefordream.com/\"");
+        expect(nav_element.children[1].name).toBe("a");
+        expect(nav_element.children[1].attributes.href).toBe("http://www.codefordream.com/");
         expect(nav_element.children[1].children[0].data).toBe("Learn More About");
         done();
     });

@@ -90,7 +90,10 @@ describe('practice-8-1', function () {
         expect(p_element2.raw).toBe("p");
 
         var a_element = p_element2.children[1];
-        expect(a_element.raw).toBe("a href=\"http://cn.bing.com/\" hreflang=\"en\" target=\"_blank\"");
+        expect(a_element.name).toBe("a");
+        expect(a_element.attributes.href).toBe("http://cn.bing.com/");
+        expect(a_element.attributes.hreflang).toBe("en");
+        expect(a_element.attributes.target).toBe("_blank");
         expect(a_element.children[0].data).toBe("必应");
 
         done();

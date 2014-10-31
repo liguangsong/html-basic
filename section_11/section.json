@@ -1,0 +1,6 @@
+{
+    "name": "HTML Embed学习",
+    "desc": "本章我们学习关于embed嵌入元素知识，在html中，这些标签经常用来加载视频、图像等。",
+    "order": 10,
+    "type": "normal"
+}

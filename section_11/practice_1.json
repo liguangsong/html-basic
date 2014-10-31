@@ -1,0 +1,26 @@
+{
+    "name": "页面嵌入控件",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "这一节，我们给html文档嵌入不同形式的内容。",
+    "desc_file": true,
+    "step_desc_file": true,
+    "tips_file": true,
+    "answer_file": true,
+
+    "project_dir": "/practices",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "practice.html",
+            "path": "/practices/section_11/practice_1"
+        }
+    ],
+    "runner":{
+        "name":"practice.html",
+        "path":"/practices/section_11/practice_1",
+        "run_files":["htmlparser","../specs/section_11/practice_1"]
+    },
+    "order": 0
+}

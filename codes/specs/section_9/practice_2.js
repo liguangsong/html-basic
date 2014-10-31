@@ -128,7 +128,9 @@ describe('practice-9-2', function () {
         var tfoot_element = table_element.children[7];
         expect(tfoot_element.raw).toBe("tfoot");
         expect(tfoot_element.children[1].raw).toBe("tr");
-        expect(tfoot_element.children[1].children[1].raw).toBe("td colspan=\"4\"");
+        expect(tfoot_element.children[1].children[1].name).toBe("td");
+        expect(tfoot_element.children[1].children[1].attributes.colspan).toBe("4");
+
         expect(tfoot_element.children[1].children[1].children[0].data).toBe("赵六和王五是来自同一学校的同学");
 
         done();

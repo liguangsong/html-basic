@@ -8,10 +8,10 @@
             "desc": "\"流行元素\"是一款提供给HTML初学者的学习应用，我们通过\"流行元素\"的案例学习HTML中常用的各种标签以及页面框架",
             "href": "/super_show/index.html"
         },
-        "order": 1,
+        "order": 0,
         "ico": "/images/html5.png",
         "title_ico": "/images/HTML.png",
-        "version": "2.4.1"
+        "version": "2.4.2"
 
     },
     "relevance": {

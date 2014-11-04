@@ -1,6 +1,19 @@
 {
-    "title": "<section>定义文档的部分内容",
-    "type": "text",
-    "order": 0,
-    "desc_file": true
+    "title": "网页中的<section>和<article>标签",
+    "desc_file": true,
+    "type": "topic",
+    "order": 2,
+    "question": {
+        "content": "下面那句话是错误的？",
+        "options": [
+            "<article>元素的发布日期和时间可通过<time>元素的pubdate属性表示。",
+            "一个<section>元素不能是<address>元素的子节点。",
+            "一个<article>元素可以是<address>元素的子节点。",
+            "如果元素内容可以分为几个部分的话，应该使用<article>而不是<section>。"
+        ]
+    },
+    "answer": {
+        "value": "一个<article>元素可以是<address>元素的子节点。",
+        "explain_file": true
+    }
 }

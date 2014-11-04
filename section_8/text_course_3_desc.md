@@ -1,53 +1,83 @@
-ruby rt rp : ruby标签包含ruby注释。 rt 标记ruby标签里面内容的注释。rp 定义不支持ruby元素的浏览器所显示的内容。使用代码如下：
+这一节我们学习input标签的使用。
 
-	<p>
-    我喜欢
-    <ruby>
-        CSS
-        <rp>(</rp>
-        <rt>Cascading Style Sheets</rt>
-        <rp>)</rp>
-    </ruby>
-	</p>
-显示效果图如下：
+input ：单行文本输入框。下面学习一下input常用的属性：
 
-<img src="http://html-basic-images.qiniudn.com/section_8_text_course_2.png" style="width:300px;">
+size： 表示输入框可以展示字符的长度
 
-s :使用s标签标记不再使用或者不再正确的内容。如：
+maxlength： 表示输入框可以展示字符的长度。
 
-	now<s>HTML4</s>HTML5
-samp :定义样本文本，表示输出程序或计算机系统。如：
+	<input size="10" maxlength="10" id=”name”/>
 
-	<samp>sample</samp>
-small :标记细则和经常用在免责声明和澄清等内容。如：
+placeholder： 文字占位符
 
-    <small>good</small>
-span：本身没有意义，通常用它给一个区域的内容设置全局属性。如:
+value： 输入框中显示的文字
 
-	<span class="myClass">CSS</span>
+	<input placeholder="Your name" />
+	<input value="my name" />
 
-strong :标记重要的内容。如：
+显示效果如下：
 
-	<strong>重要的内容</strong>
-sub sup : sub定义下标文本  sup定义上标文本。如：
+<img src="http://html-basic-images.qiniudn.com/section_10_text_course_4.png" style="width:400px;">
 
-	X<sub>10</sub>
-    X<sup>10</sup>
-显示网页如下：
+`<datalist>`：为文本框创建展示列表
 
-<img src="http://html-basic-images.qiniudn.com/section_8_text_course_3.png" style="width:200px;">
+    <form method="post" action="http://example.com/form">
+    	names: <input list="list"  />
+	</form>
+	<datalist id="list">
+    	<option value="A" label="1st" />
+    	<option value="B">2nd</option>
+    	<option value="C"/>
+	</datalist>
 
-time 定义时间 。使代码更合理，页面结构更清晰。如：
+效果显示如下：
 
-	<time datetime="16:00">4 o'clock</time>
-u :给文本添加下划线。如：
+<img src="http://html-basic-images.qiniudn.com/section_10_text_course_5.png" style="width:280px;">
 
-	<u>CSS</u>
+disabled和readonly 两个属性表示不可编辑的文本输入框
 
-var :用来说明被包含的内容是一个变量 主要作用是来使代码的语义更加清晰，让代码更有可读性，没有具体作用。如：
+	name: <input value="张三" readonly />
+	name: <input value="张三" disabled/>
 
-	<var>text_variable</var>//表示一个变量
-Wbr :在文本中的何处适合添加换行符，给一段长的文字添加合适的换行的位置。如：
+运行效果如下：
 
-	<wbr>HTML5<wbr>CSS
-表示HTML5和CSS前面为合适的换行位置。
+<img src="http://html-basic-images.qiniudn.com/section_10_text_course_6.png" style="width:250px;">
+
+autofocus 自动将光标聚焦在已设置的输入框中
+
+	name: <input id="name" autofocus />
+运行效果如下：
+
+<img src="http://html-basic-images.qiniudn.com/section_10_text_course_8.png" style="width:250px;">
+
+tabIndex ：点击tab键，焦点集中的位置顺序
+password类型： 密码输入框
+
+	<input type="password" placeholder="password" id="password"/>
+button 类型
+
+	<input type="button" />
+
+数字输入框
+
+	<input type="number" step="1" min="0" max="100" value="1" id="age"/>
+
+范围输入框：
+
+	1<input type="range" step="1" min="0" max="100" value="1" id="age"/>100
+
+展示效果图如下：
+
+<img src="http://html-basic-images.qiniudn.com/section_10_text_course_7.png" style="width:250px;">
+
+选项输入框
+
+	<input type="checkbox" checked id="age"/>选项一
+<img src="http://html-basic-images.qiniudn.com/section_10_text_course_9.png" style="width:250px;">
+
+	<input type="radio" checked /> 选项一
+<img src="http://html-basic-images.qiniudn.com/section_10_text_course_10.png" style="width:240px;">
+
+
+
+

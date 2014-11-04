@@ -1,5 +1,10 @@
-标签使用提示：
+标签整体布局为
 
-特殊文本设置标签为：`<mark>HTML</mark>`，`<em>超级文本标记语言</em>`，`<bdi>浏览器</bdi>`，`<s>HTML4</s>`。
-
-超链接使用为：`<a href="http://cn.bing.com/" hreflang="en" target="_blank">必应</a>`。
+	<form>
+        <fieldset style="width: 200px;">
+            <legend>基本信息</legend>
+        </fieldset>
+        <fieldset style="width: 200px;">
+        </fieldset>
+        <button type="submit">提交</button>
+    </form>

@@ -1,9 +1,9 @@
 {
-    "name": "一个DIV模块",
+    "name": "不同内容格式",
     "type": "normal",
     "point": 200,
 
-    "simple_desc": "在这个练习里，我们练习写一个最简的div结构块",
+    "simple_desc": "在这个练习里，我们练习各种不同格式的标签美化网页内容",
     "desc_file": true,
     "step_desc_file": true,
     "tips_file": true,

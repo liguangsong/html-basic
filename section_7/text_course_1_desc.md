@@ -1,31 +1,58 @@
-这一节我们学习一下`<blockquote>`标签、`<p>`标签、`<pre>`标签。
+`<table>`:定义HTML文档中的表格。如果需要给表格设置边框，则`<table border=”1”>`
+`<tr>`定义表格中的一行
+`<th>`定义表格中的表头
+`<td>`定义表格中的一列
+使用代码如下：
 
-`<blockquote>`标签可以将其包含起来的文字，全部向右缩进，而且加一组此标签就会向右缩进一个单位。使用代码如下：
+	<table border="1">
+    <tr>
+        <th>姓名</th>
+        <th>出生年月</th>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>1991年7月</td>
+    </tr>
+</table>
+效果图展示如下：
 
-	<body>
-	这是正文
-	<blockquote>
-    	这是一个很长很长很长很长很长很长的引用。
-	</blockquote>
-	这是正文
-	</body>
-网页运行效果如下：
+<img src="http://html-basic-images.qiniudn.com/section_9_text_course_1.png" style="width:300px;">
 
-<img src="http://html-basic-images.qiniudn.com/section_7_text_course_1.png" style="width:400px"/>
+`<thead>`标签定义表格的页头
 
-接下来学习常见的p标签。`<p>`标签修饰一个段落或者一句话。如下代码展示：
+`<tbody>`标签定义表格的主体
 
-	<p>HTML is good.</p>
+`<tfoot>`标签定义表格的页脚
 
-下面了解一下`<pre>`标签。`<pre>`标签修饰的内容一般会保留内容中的空格和换行符。在浏览器中显示时，会按照编辑器中预先排好的形式显示内容。代码展示如下：
+使用三种标签划分table表格，使代码结构更加清晰。
 
-	<pre>
-             1
-           1   1
-        1    1    1
-      1   1     1    1
-	                                 --铁三角
-	</pre>
-网页展示如下图：
+使用代码如下：
 
-<img src="http://html-basic-images.qiniudn.com/section_7_text_course_2.png" style="width:500px"/>
+	<table border="1">
+    	<thead>
+        	<tr>
+            	<th>姓名</th>
+           		<th>年龄</th>
+       	 	</tr>
+   		</thead>
+    	<tbody>
+        	<tr>
+            	<td>张三</td>
+            	<td>25</td>
+        	</tr>
+        	<tr>
+            	<td>李四</td>
+            	<td>23</td>
+        	</tr>
+    	</tbody>
+    	<tfoot>
+        	<tr>
+            	<td>平均</td>
+            	<td>24</td>
+        	</tr>
+    	</tfoot>
+	</table>
+
+运行效果图如下：
+
+<img src="http://html-basic-images.qiniudn.com/section_9_text_course_2.png" style="width:230px;">

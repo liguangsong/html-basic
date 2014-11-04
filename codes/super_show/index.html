@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"  />
+    <title>流行元素</title>
+
+    <!--勿修改此行注释下引入测试的代码 否则可能会对过关产生影响-->
+    <!--<script type="text/javascript" src="../../../lib/require.js" data-main="../../../lib/main"></script>-->
+</head>
+<body>
+<div style="position:absolute;height: 380px;width: 240px;background-color: gray;left: 30px;top: 30px;">
+    <form>
+        <fieldset style="width: 200px;">
+            <legend>基本信息</legend>
+            <p>姓名：<input id="name"/></p>
+            <p>年龄：<input id="age" type="number" min="0" max="100"/></p>
+            <p>邮箱：<input type="email" pattern="^.*@jimitec.com$"/></p>
+        </fieldset>
+        <fieldset style="width: 200px;">
+            <legend>个人简介</legend>
+            <textarea rows="10" cols="20" autofocus="autofocus">form表单的使用，将表单分组使用fieldset</textarea>
+        </fieldset>
+        <button type="submit">提交</button>
+    </form>
+</div>
+
+<div style="position:absolute;height: 380px;width: 100px;background-color: #f1c40f;left: 280px;top: 30px;">
+    <p>这是一篇文章article与段落section</p>
+    <article>
+        <header>
+            <h2>白天鹅</h2>
+        </header>
+        <section>
+            <h3>第一段</h3>
+            <p>第一段详情</p>
+        </section>
+        <section>
+            <h3>第二段</h3>
+            <p>第二段详情</p>
+        </section>
+        <footer>
+            <p>版权出于白天鹅</p>
+        </footer>
+    </article>
+</div>
+<div style="position:absolute;height: 380px;width: 180px;background-color: #1abc9c;left: 390px;top: 30px;">
+    <p>这是关于一组列表内容</p>
+    <dl>
+        <dt>颜色（普通列表dl）</dt>
+        <dd>红色</dd>
+        <dd>黑色</dd>
+    </dl>
+    <p>颜色（有序列表ol）</p>
+    <ol>
+        <li>红色</li>
+        <li>黑色</li>
+    </ol>
+    <p>颜色（无序列表ul）</p>
+    <ul>
+        <li>红色</li>
+        <li>黑色</li>
+    </ul>
+</div>
+
+<div style="position:absolute;height: 270px;width: 330px;left: 580px;top: 30px; background-color: #34495e;">
+    <figure>
+        <p>添加图片与介绍使用figure</p>
+        <img src="http://html-basic-images.qiniudn.com/section_last_img1.png" style="width: 250px;" >
+        <figcaption>简单的图片(figcaption)</figcaption>
+    </figure>
+</div>
+<div id="div1" style="position: absolute;height: 100px;width: 160px;background-color: #f1c40f; left: 580px;top: 310px;">
+    <p>div1的展示模块(div标签)</p>
+</div>
+<div id="div2" style="position:absolute;height: 100px;width: 160px;background-color: #1abc9c;left: 750px;top: 310px;">
+    <p>div2的展示模块(div标签)</p>
+</div>
+<div style="position:absolute;height: 100px;width: 910px;left: 30px;top: 420px; background-color: #1abc9c;">
+    <p>
+        <mark>IDE</mark>(mark修饰)是<em>集成开发环境</em>(em修饰)的英文缩写。
+        所谓集成开发环境，就是将你在开发过程中所需要的工具或功能集成到了一起，
+        比如<bdi>代码编写</bdi>(bdi修饰)、<bdi>分析</bdi>(bdi修饰)、<bdi>编译</bdi>(bdi修饰)、<bdi>调试</bdi>(bdi修饰)等功能，
+        从而最大化地提高开发者的工作效率。现在优先使用HTML5<s>HTML4</s>(s修饰)
+    </p>
+    <p>如需其他帮助，请点击我们的学习网站以下链接：
+        <a href="http://www.codefordream.com/" hreflang="en" target="_blank">CodeForDream</a>
+    </p>
+</div>
+<div style="position:absolute;height: 120px;width: 280px;left: 30px;top: 530px; background-color: #f1c40f;">
+    <table border="1">
+        <caption>工人登记表格(table)</caption>
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>单位</th>
+            <th>工龄</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>赵六</td>
+            <td>36</td>
+            <td>A公司</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>王五</td>
+            <td>30</td>
+            <td>B公司</td>
+            <td>7</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="4">赵六和王五是来自同一学校的同学</td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+<div style="position:absolute;height: 150px;width: 280px;left: 30px;top: 660px; background-color: #34495e;">
+    <p>progress进度条</p>
+    <progress id="myprogress" value="50" max="100"></progress>
+    <p>meter标准测量，可以显示正常值或过高过低的值</p>
+    <meter id="mymeter2" value="20" min="0" max="100" low="30" high="70"
+           optimum="50"></meter>
+    <meter id="mymeter1" value="50" min="0" max="100" low="30" high="70"
+           optimum="50"></meter>
+    <meter id="mymeter3" value="80" min="0" max="100" low="30" high="70"
+           optimum="50"></meter>
+</div>
+<div style="position:absolute;height: 280px;width: 210px;background-color: gray;left: 320px;top: 530px;">
+    <p>这是正文</p>
+    <blockquote>
+        展示缩进文字blockquote<br><br>
+        IDE是集成开发环境的英文缩写，所谓集成开发环境，就是将你在开发过程中所需要的工具或功能集成到了一起，
+        比如代码编写、分析、编译、调试等功能。
+    </blockquote>
+    <p>这是也正文</p>
+</div>
+
+<div style="position:absolute;height: 280px;width: 210px;background-color: #1abc9c;left: 540px;top: 530px;">
+    <p>加载视频embed</p>
+    <embed src="http://html-basic-images.qiniudn.com/Taylor.Swift%5BLove.Story%5D.mp4" height="250" width="210" />
+</div>
+<div style="position:absolute;height: 280px;width: 180px;background-color: #34495e;left: 760px;top: 530px;">
+    <p>添加iframe框架</p>
+    <iframe src="http://www.codefordream.com/" sandbox="allow-same-origin allow-scripts" width="170" height="250"></iframe>
+
+</div>
+
+</body>
+
+</html>

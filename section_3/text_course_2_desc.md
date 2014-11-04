@@ -1,24 +1,33 @@
+下面讲一下`<div>`标签的使用：
 
-`<base>` 是一个单标签,即没有对应的结束标签
-                   
-`<base>` 用于设置本文档中所有相对链接的基础路径.（如果链接的路径是完整的，则不使用这个基础路径。一个最基本的完整路径应该包括访问协议,主机地址,服务端口）         
-       注：相对链接是指忽略URL的协议类型，主机地址和端口并以另一个URL作为基础进行访问的链接。    
-         
-`<base>` 有两个属性href和target。href指定基础路径;target指定根据这个路径访问的页面的打开方式（页面打开方式我们会在后面详解）。   
-               
-使用`<base>`设置设置文档中所有相对链接的基础路径：                  
+    <div id="left" class = "left_css">
+	    <p>左侧栏</p>
+    </div>
 
-    <!DOCTYPE html>
-    <html>
-       <head lang="en">
-           <meta charset="UTF-8">
-           <title>这是标题</title>
-           <base href="http://www.baidu.com">
-       </head>
-       <body>
-           <a href="/s?wd=哈哈哈&bs=哈哈">搜索哈哈</a> <!--这个链接会打开百度搜索‘哈哈’关键字的页面-->
-           <a href="https://www.google.com">访问google</a>  <!--这个链接会打开google的首页-->
-       </body>
-    </html>
+id: 用于标识`<div>`块（即`<div>`标签的名字）
+
+class: 修饰`<div>`块的css样式组（css在这里不是重点讲解，我们会有专门的课程讲解css）
+
+`<div>` 图层定义常见的属性设置：
+
+   position:绝对定位和相对定位 (abosolute,relative)
+
+   height:`<div>`模块的高度
+
+   width:`<div>`模块的宽度
+
+   left:相对于窗口左边的位置
+
+   top:相对于窗口上边的位置
 
 
+    <div class="border" style="position: absolute;width: 320px;height: 300px;left:20px;top: 30px;">
+        <p>测试名为left的div模块在html页面上展示</p>
+    </div>
+
+效果如下图：
+
+<img src="http://html-basic-images.qiniudn.com/section_5_text_course_2.png" style="width:500px"/>
+
+
+注：div1内容改变时，不会影响到整个的html，可以专注修改div1的内容。

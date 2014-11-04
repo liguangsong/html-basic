@@ -1,9 +1,9 @@
 {
-    "name": "创建基本表格",
+    "name": "页面嵌入控件",
     "type": "normal",
     "point": 200,
 
-    "simple_desc": "这一节，我们练习使用最基本的标签创建一个简单的表格。",
+    "simple_desc": "这一节，我们给html文档嵌入不同形式的内容。",
     "desc_file": true,
     "step_desc_file": true,
     "tips_file": true,

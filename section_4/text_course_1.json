@@ -1,19 +1,6 @@
 {
-    "title": "文章标题标签",
-    "type": "topic",
-    "order": 0,
+    "title": "使用不同意义的section模块布局",
     "desc_file": true,
-    "question": {
-        "content": "下面对标题标签描述错误的是?",
-        "options": [
-            "可以将标题标签用于<head>标签中",
-            "可以使用<hgroup>对文章标题进行分组",
-            "html将文章标题进行了分级,从高到低共有6个等级",
-            "请确保将 HTML heading 标签只用于标题。不要仅仅是为了产生粗体或大号的文本而使用标题。"
-        ]
-    },
-    "answer": {
-        "value": "可以将标题标签用于<head>标签中",
-        "explain_file":true
-    }
+    "type": "text",
+    "order": 0
 }

@@ -4,14 +4,14 @@
         "id_name":   "html_basic",
         "desc": "HTML全程超文本标记语言 (Hyper Text Markup Language)，使用来做Web页面的基础模型，它负责描述网页需要显示的内容和结构，而非外观。",
         "target_effect": {
-            "name": "没想好最后show什么",
-            "desc": "HTML有什么好show的",
-            "href": "/"
+            "name": "流行元素",
+            "desc": "\"流行元素\"是一款提供给HTML初学者的学习应用，我们通过\"流行元素\"的案例学习HTML中常用的各种标签以及页面框架",
+            "href": "/super_show/index.html"
         },
         "order": 1,
-        "ico": "images/angularjs_logo.png",
-        "title_ico": "images/AngularJS.png",
-        "version": "2.3.1"
+        "ico": "/images/html5.png",
+        "title_ico": "/images/HTML.png",
+        "version": "2.4.0"
 
     },
     "relevance": {

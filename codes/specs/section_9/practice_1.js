@@ -1,5 +1,5 @@
 
-describe('practice-9-1', function () {
+describe('practice-10-1', function () {
 
 //    it('test', function() {
 //        expect($('#test').text()).toBe("HelloWorld!");
@@ -63,61 +63,77 @@ describe('practice-9-1', function () {
         expect($.trim(title_element.children[0].data)).toBe("我是标题");
         done();
     });
-    it("body标签的子标签为table标签，创建基本的表格", function(done){
+    it("body标签的子标签为form标签，创建表单展示个人信息", function(done){
         var html_element_children = _(html_object[1].children).filter(html_tag);
         var body_element_children = _(html_element_children[1].children).filter(html_tag);
         console.log(body_element_children);
-        //p标签
-        var table_element = body_element_children[1];
-        expect(table_element.raw).toBe("table border=\"1\"");
-//        var mark_element = p_element1.children[1];
-//        expect(mark_element.raw).toBe("mark");
-//        expect(mark_element.children[0].data).toBe("HTML");
+        //embed标签
+        var embed_element = body_element_children[1];
+        expect(embed_element.raw).toBe("embed src=\"http://html-basic-images.qiniudn.com/Taylor.Swift%5BLove.Story%5D.mp4\" height=\"200\" width=\"200\" /");
+        var iframe_element = body_element_children[2];
+        expect(iframe_element.name).toBe("iframe");
+        expect(iframe_element.attributes.height).toBe("200");
+        expect(iframe_element.attributes.sandbox).toBe("allow-same-origin allow-scripts");
+        expect(iframe_element.attributes.width).toBe("200");
+        expect(iframe_element.attributes.src).toBe("http://www.codefordream.com/");
+
+        var br_element = body_element_children[3];
+        expect(br_element.name).toBe("br");
+
+        var meter_element = body_element_children[4];
+        expect(meter_element.name).toBe("meter");
+        expect(meter_element.attributes.id).toBe("mymeter");
+        expect(meter_element.attributes.low).toBe("30");
+        expect(meter_element.attributes.max).toBe("100");
+        expect(meter_element.attributes.high).toBe("70");
+        expect(meter_element.attributes.optimum).toBe("50");
+        expect(meter_element.attributes.value).toBe("40");
+
+//        var legend_fieldset_element1 = fieldset_form_element1.children[1];
+//        expect(legend_fieldset_element1.raw).toBe("legend");
+//        expect(legend_fieldset_element1.children[0].data).toBe("基本信息");
 //
-        var tr_element1 = table_element.children[1];
-        expect(tr_element1.raw).toBe("tr");
-        var th_element1 = tr_element1.children[1];
-        expect(th_element1.raw).toBe("th");
-        expect(th_element1.children[0].data).toBe("姓名");
-        var th_element2 = tr_element1.children[3];
-        expect(th_element2.raw).toBe("th");
-        expect(th_element2.children[0].data).toBe("年龄");
-        var th_element3 = tr_element1.children[5];
-        expect(th_element3.raw).toBe("th");
-        expect(th_element3.children[0].data).toBe("单位");
-        var th_element4 = tr_element1.children[7];
-        expect(th_element4.raw).toBe("th");
-        expect(th_element4.children[0].data).toBe("工龄");
-
-        var tr_element2 = table_element.children[3];
-        expect(tr_element2.raw).toBe("tr");
-        var td1_element1 = tr_element2.children[1];
-        expect(td1_element1.raw).toBe("td");
-        expect(td1_element1.children[0].data).toBe("赵六");
-        var td1_element2 = tr_element2.children[3];
-        expect(td1_element2.raw).toBe("td");
-        expect(td1_element2.children[0].data).toBe("36");
-        var td1_element3 = tr_element2.children[5];
-        expect(td1_element3.raw).toBe("td");
-        expect(td1_element3.children[0].data).toBe("A公司");
-        var td1_element4 = tr_element2.children[7];
-        expect(td1_element4.raw).toBe("td");
-        expect(td1_element4.children[0].data).toBe("13");
-
-        var tr_element3 = table_element.children[5];
-        expect(tr_element3.raw).toBe("tr");
-        var td2_element1 = tr_element3.children[1];
-        expect(td2_element1.raw).toBe("td");
-        expect(td2_element1.children[0].data).toBe("王五");
-        var td2_element2 = tr_element3.children[3];
-        expect(td2_element2.raw).toBe("td");
-        expect(td2_element2.children[0].data).toBe("30");
-        var td2_element3 = tr_element3.children[5];
-        expect(td2_element3.raw).toBe("td");
-        expect(td2_element3.children[0].data).toBe("B公司");
-        var td2_element4 = tr_element3.children[7];
-        expect(td2_element4.raw).toBe("td");
-        expect(td2_element4.children[0].data).toBe("7");
+//        var p_fieldset_element1 = fieldset_form_element1.children[3];
+//        expect(p_fieldset_element1.raw).toBe("p");
+//
+//        expect(p_fieldset_element1.children[0].data).toBe("姓名：");
+//        expect(p_fieldset_element1.children[1].name).toBe("input");
+//        expect(p_fieldset_element1.attributes.id).toBe("name");
+//
+//        var p_fieldset_element2 = fieldset_form_element1.children[5];
+//        expect(p_fieldset_element2.raw).toBe("p");
+//        expect(p_fieldset_element2.children[0].data).toBe("年龄：");
+//
+//        expect(p_fieldset_element2.children[1].name).toBe("input");
+//        expect(p_fieldset_element2.attributes.id).toBe("age");
+//        expect(p_fieldset_element2.attributes.max).toBe("100");
+//        expect(p_fieldset_element2.attributes.min).toBe("0");
+//        expect(p_fieldset_element2.attributes.type).toBe("number");
+//
+//
+//        var p_fieldset_element3 = fieldset_form_element1.children[7];
+//        expect(p_fieldset_element3.raw).toBe("p");
+//        expect(p_fieldset_element3.children[0].data).toBe("邮箱：");
+//        expect(p_fieldset_element3.children[1].name).toBe("input");
+//        expect(p_fieldset_element3.attributes.type).toBe("email");
+//        expect(p_fieldset_element3.attributes.pattern).toBe("^.*@jimitec.com$");
+//
+//        var fieldset_form_element2 = form_element.children[3];
+//        expect(fieldset_form_element2.raw).toBe("fieldset style=\"width: 200px;\"");
+//        var legend_fieldset_element2 = fieldset_form_element2.children[1];
+//        expect(legend_fieldset_element2.raw).toBe("legend");
+//        expect(legend_fieldset_element2.children[0].data).toBe("个人简介");
+//
+//        var textarea_fieldset_element = fieldset_form_element2.children[3];
+//        expect(textarea_fieldset_element.name).toBe("textarea");
+//        expect(textarea_fieldset_element.attributes.autofocus).toBe("autofocus");
+//        expect(textarea_fieldset_element.attributes.cols).toBe("20");
+//        expect(textarea_fieldset_element.attributes.rows).toBe("10");
+//
+//        var button_form = form_element.children[5];
+//        expect(button_form.name).toBe("button");
+//        expect(button_form.children[0].data).toBe("提交");
+//        expect(button_form.attributes.type).toBe("submit");
 
         done();
     });

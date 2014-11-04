@@ -1,0 +1,26 @@
+{
+    "name": "一个DIV模块",
+    "type": "normal",
+    "point": 200,
+
+    "simple_desc": "在这个练习里，我们练习写一个最简的div结构块",
+    "desc_file": true,
+    "step_desc_file": true,
+    "tips_file": true,
+    "answer_file": true,
+
+    "project_dir": "/practices",
+    "specs_dir": "/specs",
+    "files": [
+        {
+            "name": "practice.html",
+            "path": "/practices/section_3/practice_1"
+        }
+    ],
+    "runner":{
+        "name":"practice.html",
+        "path":"/practices/section_3/practice_1",
+        "run_files":["htmlparser","../specs/section_3/practice_1"]
+    },
+    "order": 0
+}

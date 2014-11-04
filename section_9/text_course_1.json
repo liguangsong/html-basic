@@ -1,19 +1,6 @@
 {
-    "title": "创建最基本的表格",
+    "title": "Img图像的嵌入与使用",
     "desc_file": true,
-    "type": "topic",
-    "order": 0,
-    "question": {
-        "content": "关于表格中各种标签的说法正确的是？",
-        "options": [
-            "<thead>标签定义表格的页头",
-            "<td>标签定义表格的主体",
-            "<tr>标签定义表格中的一列",
-            "<th>标签定义表格中的一行"
-        ]
-    },
-    "answer": {
-        "value": "<thead>标签定义表格的页头",
-        "explain_file": true
-    }
+    "type": "text",
+    "order": 0
 }

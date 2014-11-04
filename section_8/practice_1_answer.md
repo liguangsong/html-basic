@@ -1,10 +1,15 @@
 答案如下：
 
-    <p>
-        <mark>HTML</mark>:<em>超级文本标记语言</em>是标准通用标记语言下的一个应用，也是一种规范，一种标准，
-        它通过标记符号来标记要显示的网页中的各个部分。网页文件本身是一种文本文件，通过在文本文件中添加标记符，可以告诉<bdi>浏览器</bdi>
-        如何显示其中的内容（如：文字如何处理，画面如何安排，图片如何显示等）。现在优先使用HTML5<s>HTML4</s>
-    </p>
-    <p>如需其他搜索帮助，请点击以下链接：
-        <a href="http://cn.bing.com/" hreflang="en" target="_blank">必应</a>
-    </p>
+    <form>
+        <fieldset style="width: 200px;">
+            <legend>基本信息</legend>
+            <p>姓名：<input id="name"/></p>
+            <p>年龄：<input id="age" type="number" min="0" max="100"/></p>
+            <p>邮箱：<input type="email" pattern="^.*@jimitec.com$"/></p>
+        </fieldset>
+        <fieldset style="width: 200px;">
+            <legend>个人简介</legend>
+            <textarea rows="10" cols="20" autofocus="autofocus"></textarea>
+        </fieldset>
+        <button type="submit">提交</button>
+    </form>

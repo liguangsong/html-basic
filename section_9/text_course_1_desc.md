@@ -1,58 +1,35 @@
-`<table>`:定义HTML文档中的表格。如果需要给表格设置边框，则`<table border=”1”>`
-`<tr>`定义表格中的一行
-`<th>`定义表格中的表头
-`<td>`定义表格中的一列
-使用代码如下：
+这一课，我们学习关于嵌入元素的标签。
 
-	<table border="1">
-    <tr>
-        <th>姓名</th>
-        <th>出生年月</th>
-    </tr>
-    <tr>
-        <td>张三</td>
-        <td>1991年7月</td>
-    </tr>
-</table>
-效果图展示如下：
+`<img>`标签：用于网页中加载一张图片，没有结束标签。常用的属性如下：
 
-<img src="http://html-basic-images.qiniudn.com/section_9_text_course_1.png" style="width:300px;">
+src=url  图片路径，嵌入图片时，必须设置src属性（可以使本地相对路径，也可以是图片网址）
 
-`<thead>`标签定义表格的页头
+alt=”美丽的图片” 图片的替代文本，即如果没有成功加载图片，显示的文本。
 
-`<tbody>`标签定义表格的主体
+width=”200” height=”100” 设置图片的宽度和高度
 
-`<tfoot>`标签定义表格的页脚
+	<img src="http://ts1.mm.bing.net/th?id=HN.607988484064152362&pid=1.7" alt="壁纸" width="270" height="200">
 
-使用三种标签划分table表格，使代码结构更加清晰。
+加载图片展示效果如下：
 
-使用代码如下：
+<img src="http://html-basic-images.qiniudn.com/section_11_text_course_1.png" style="width:320px;">
 
-	<table border="1">
-    	<thead>
-        	<tr>
-            	<th>姓名</th>
-           		<th>年龄</th>
-       	 	</tr>
-   		</thead>
-    	<tbody>
-        	<tr>
-            	<td>张三</td>
-            	<td>25</td>
-        	</tr>
-        	<tr>
-            	<td>李四</td>
-            	<td>23</td>
-        	</tr>
-    	</tbody>
-    	<tfoot>
-        	<tr>
-            	<td>平均</td>
-            	<td>24</td>
-        	</tr>
-    	</tfoot>
-	</table>
+下面看一下给图片设置一个链接：
 
-运行效果图如下：
+	<a href="http://www.codefordream.com/">
+    	<img src="http://ts1.mm.bing.net/th?id=HN.607988484064152362&pid=1.7" alt="壁纸" width="100" height="100">
+	</a>
 
-<img src="http://html-basic-images.qiniudn.com/section_9_text_course_2.png" style="width:230px;">
+应用效果：点击加载的图片，网页跳转到"http://www.codefordream.com"页面。
+
+`<img>`标签还可以帮助地图实现对其不同区域的操作。如下：
+
+	<p>
+    	<img src="http://ts1.mm.bing.net/th?id=HN.607988484064152362&pid=1.7" alt="壁纸" width="200" height="200" usemap="#map">
+	</p>
+	<map name="map">
+    	<area href="a.html" shape="rect" coords="0,0,100,100" alt="test a" />
+    	<area href="b.html" shape="rect" coords="100,0,200,100" alt="test b" />
+    	<area href="c.html" shape="default" alt="test c" />
+	</map>
+

@@ -1,6 +1,19 @@
 {
-    "title": "<meta>标签,为文档定义元数据.",
-    "type": "text",
+    "title": "div标签的嵌套使用",
+    "desc_file": true,
+    "type": "topic",
     "order": 2,
-    "desc_file": true
+    "question": {
+        "content": "如上代码块所示，判断divall、div1以及div2之间的关系：",
+        "options": [
+            "div1、div2与divall是嵌套关系，div1、div2是并列关系",
+            "div1、div2和divall是并列关系",
+            "div1、div2是嵌套关系",
+            "div1、div2、divall互为嵌套关系"
+        ]
+    },
+    "answer": {
+        "value": "div1、div2与divall是嵌套关系，div1、div2是并列关系",
+        "explain_file":true
+    }
 }

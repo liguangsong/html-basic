@@ -1,43 +1,21 @@
-`<article>` 标签定义独立的内容。
+首先，我们学习一下六种H标签，分别为h1，h2，h3，h4，h5，h6
 
-`<article>` 标签定义的内容本身必须是有意义的且必须是独立于文档的其余部分。
+H标签设置文字模块的标题，不同级别的标题，使用不同的h标签，`<h1>`标签级别最高。每一对H标签将其里面的内容作为一个独立的模块。如下为H标签的使用：
 
-`<article>` 的潜在来源： 
-  
-- 论坛帖子  
-- 博客文章   
-- 新闻故事   
-- 评论   
+	<h1>我是H1</h1>
+	<h2>我是H2</h2>
+	<h3>我是H3</h3>
+	<h4>我是H4</h4>
+	<h5>我是H5</h5>
+	<h6>我是H6</h6>
 
-使用范例:
-    
-    <!DOCTYPE HTML>
-    <html>
-        <head>
-            <title>demo of article</title>
-        </head>
-        <body>
-          <article>
-            <header>
-              <hgroup>
-                <h1 id="fruitsilike">H1Like</h1>
-                <h2>H2</h2>
-              </hgroup>
-            </header>
-            This is a test.
-            <section>
-              <h1 id="morefruit">XML</h1>
-              This is a test.
-              <section>
-                <h1>HTML</h1>
-                This is a test.
-              </section>
-            </section>
-            <footer>
-              <nav>
-                Nav
-              </nav>
-            </footer>
-          </article>
-        </body>
-    </html>
+网页中的运行效果如下：
+
+<img src="http://html-basic-images.qiniudn.com/section_6_text_course_2.png" style="width:253px"/>
+
+在网页设计中，有时会将多个标题进行组合，这时`<hgroup>`可以对封装多个h标签，不影响html文档的大纲。代码使用如下：
+
+	<hgroup>
+    	<h3>Hello</h3>
+		<h3>World</h3>
+    </hgroup>

@@ -1,6 +1,6 @@
 {
-    "name": "Group Content学习",
-    "desc": "这一章我们学习Group Content中的各种标签,在这里我们会学习到不同形式内容的展示。",
+    "name": "HTML Table学习",
+    "desc": "在网页中，我们经常看到各式各样的表格，对于表格的使用与创建，我们又了解多少呢？下面，我们就来学习一下关于table表格的知识以及常用的设置。",
     "order": 6,
     "type": "normal"
 }

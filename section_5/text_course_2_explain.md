@@ -1,5 +1,5 @@
 正确的答案是:
 
-    <div id="left_side" class="side service-side"></div>
+`<ol><li>`测试`</li></ol>`
 
-题目说到`<div>`标签的唯一标识是"left_side"即id="left_side";`<div>`标签的css样式是"side"和"service-side"即 class="side service-side"。
+注意：有序列表展示使用`<ol>`标签，列表中的每一条内容的展示使用`<li>`标签。

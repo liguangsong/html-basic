@@ -1,6 +1,6 @@
 {
-    "name": "Html Section学习",
-    "desc": "这一章我们学习Html Section中的各种标签,学完以后，就会各种有不同意义的模块标签布局页面了。",
+    "name": "Text Marker学习",
+    "desc": "网页文档中可能出现不同含义的内容使用不同的形式标记，本章我们将学习有关文本标记中的各种标签和属性。",
     "order": 5,
     "type": "normal"
 }

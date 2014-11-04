@@ -1,19 +1,19 @@
 {
-    "title": "div标签使用及常用属性",
+    "title": "与List列表相关的标签",
     "desc_file": true,
     "type": "topic",
     "order": 1,
     "question": {
-        "content": "已知淘宝页面的左侧栏的css样式为\"side\"和\"service-side\",标注左侧栏的唯一标识名为\"left_side\"，则下面哪种div标签的写法正确？",
+        "content": "下面哪段代码可以实现上图内容的展示?",
         "options": [
-            "<div id=\"left_side\" class=\"side\"></div>",
-            "<div id=\"side\" class=\"left_side\"></div>",
-            "<div id=\"left_side\" class=\"side service-side\"></div>",
-            "<div id=\"side\" class=\"side service-side\"></div>"
+            "<ul><li>测试</li></ul>",
+            "<ol><li>测试</li></ol>",
+            "<dl><dt>测试</dt></dl>",
+            "<dt><dd>测试</dd></dt>"
         ]
     },
     "answer": {
-        "value": "<div id=\"left_side\" class=\"side service-side\"></div>",
-        "explain_file":true
+        "value": "<ol><li>测试</li></ol>",
+        "explain_file": true
     }
 }

@@ -1,5 +1,5 @@
 
-describe('practice-8-1', function () {
+describe('practice-10-1', function () {
 
 //    it('test', function() {
 //        expect($('#test').text()).toBe("HelloWorld!");
@@ -63,38 +63,60 @@ describe('practice-8-1', function () {
         expect($.trim(title_element.children[0].data)).toBe("我是标题");
         done();
     });
-    it("body标签的子标签为p标签", function(done){
+    it("body标签的子标签为form标签，创建表单展示个人信息", function(done){
         var html_element_children = _(html_object[1].children).filter(html_tag);
         var body_element_children = _(html_element_children[1].children).filter(html_tag);
         console.log(body_element_children);
-        //p标签
-        var p_element1 = body_element_children[1];
-        expect(p_element1.raw).toBe("p");
-        var mark_element = p_element1.children[1];
-        expect(mark_element.raw).toBe("mark");
-        expect(mark_element.children[0].data).toBe("HTML");
+        //form标签
+        var form_element = body_element_children[1];
+        expect(form_element.raw).toBe("form");
+        var fieldset_form_element1 = form_element.children[1];
+        expect(fieldset_form_element1.raw).toBe("fieldset style=\"width: 200px;\"");
+        var legend_fieldset_element1 = fieldset_form_element1.children[1];
+        expect(legend_fieldset_element1.raw).toBe("legend");
+        expect(legend_fieldset_element1.children[0].data).toBe("基本信息");
 
-        var em_element = p_element1.children[3];
-        expect(em_element.raw).toBe("em");
-        expect(em_element.children[0].data).toBe("超级文本标记语言");
+        var p_fieldset_element1 = fieldset_form_element1.children[3];
+        expect(p_fieldset_element1.raw).toBe("p");
 
-        var bdi_element = p_element1.children[5];
-        expect(bdi_element.raw).toBe("bdi");
-        expect(bdi_element.children[0].data).toBe("浏览器");
+        expect(p_fieldset_element1.children[0].data).toBe("姓名：");
+        expect(p_fieldset_element1.children[1].name).toBe("input");
+        expect(p_fieldset_element1.attributes.id).toBe("name");
 
-        var s_element = p_element1.children[7];
-        expect(s_element.raw).toBe("s");
-        expect(s_element.children[0].data).toBe("HTML4");
+        var p_fieldset_element2 = fieldset_form_element1.children[5];
+        expect(p_fieldset_element2.raw).toBe("p");
+        expect(p_fieldset_element2.children[0].data).toBe("年龄：");
 
-        var p_element2 = body_element_children[2];
-        expect(p_element2.raw).toBe("p");
+        expect(p_fieldset_element2.children[1].name).toBe("input");
+        expect(p_fieldset_element2.attributes.id).toBe("age");
+        expect(p_fieldset_element2.attributes.max).toBe("100");
+        expect(p_fieldset_element2.attributes.min).toBe("0");
+        expect(p_fieldset_element2.attributes.type).toBe("number");
 
-        var a_element = p_element2.children[1];
-        expect(a_element.name).toBe("a");
-        expect(a_element.attributes.href).toBe("http://cn.bing.com/");
-        expect(a_element.attributes.hreflang).toBe("en");
-        expect(a_element.attributes.target).toBe("_blank");
-        expect(a_element.children[0].data).toBe("必应");
+
+        var p_fieldset_element3 = fieldset_form_element1.children[7];
+        expect(p_fieldset_element3.raw).toBe("p");
+        expect(p_fieldset_element3.children[0].data).toBe("邮箱：");
+        expect(p_fieldset_element3.children[1].name).toBe("input");
+        expect(p_fieldset_element3.attributes.type).toBe("email");
+        expect(p_fieldset_element3.attributes.pattern).toBe("^.*@jimitec.com$");
+
+        var fieldset_form_element2 = form_element.children[3];
+        expect(fieldset_form_element2.raw).toBe("fieldset style=\"width: 200px;\"");
+        var legend_fieldset_element2 = fieldset_form_element2.children[1];
+        expect(legend_fieldset_element2.raw).toBe("legend");
+        expect(legend_fieldset_element2.children[0].data).toBe("个人简介");
+
+        var textarea_fieldset_element = fieldset_form_element2.children[3];
+        expect(textarea_fieldset_element.name).toBe("textarea");
+        expect(textarea_fieldset_element.attributes.autofocus).toBe("autofocus");
+        expect(textarea_fieldset_element.attributes.cols).toBe("20");
+        expect(textarea_fieldset_element.attributes.rows).toBe("10");
+
+        var button_form = form_element.children[5];
+        expect(button_form.name).toBe("button");
+        expect(button_form.children[0].data).toBe("提交");
+        expect(button_form.attributes.type).toBe("submit");
 
         done();
     });

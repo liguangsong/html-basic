@@ -1,68 +1,45 @@
-这一节，我们学习给table表格添加属性。
+`<iframe>`标签 网页中的框架，在这个框架中可以嵌入一个网页，可以设置框架的大小。
 
-给`<thead>`标签内的表头`<th>`元素设置id属性；给`<tbody>`标签内的`<th>`或`<td>`标签添加header属性  使一个表头单元格的id属性与一个数据单元格的header属性关联起来。代码如下：
+	<iframe src="http://www.taobao.com/" width="400" height="200"></iframe>
 
-	<table border="1">
-    	<thead>
-        	<tr>
-            	<th id="name">姓名</th>
-           		<th id="age">年龄</th>
-        	</tr>
-    	</thead>
-    	<tbody>
-       	 	<tr>
-            	<td headers="name one">张三</td>
-            	<td headers="age one">25</td>
-        	</tr>
-        	<tr>
-            	<td headers="name two">李四</td>
-            	<td headers="age two">23</td>
-        	</tr>
-    	</tbody>
-	</table>
+下面是`<iframe>`标签中常使用的属性：
 
-`<colgroup>`标签可以对表格的列进行组合，从而进行整体格式化。使用代码如下：
+height :设置iframe框架的高度
 
-	<head>
-    <style>
-        #colgroup1 {
-        background-color: red
-        }
+width :设置iframe框架的宽度
 
-        #colgroup2 {
-            background-color: green;
-        }
-    </style>
-	</head>
-	<body>
-		<table border="1">
-    		<colgroup id="colgroup1" span="1">
-    		<colgroup id="colgroup2" span="1">
-    		<thead>
-        		<tr>
-            		<th id="name">姓名</th>
-           			<th id="age">年龄</th>
-        		</tr>
-    		</thead>
-    		<tbody>
-        		<tr>
-            		<td headers="name one">张三</td>
-            		<td headers="age one">25</td>
-        		</tr>
-        		<tr>
-            		<td headers="name two">李四</td>
-            		<td headers="age two">23</td>
-        		</tr>
-    		</tbody>
-    		<tfoot>
-    		<tr>
-        		<td>平均</td>
-        		<td>24</td>
-    		</tr>
-    		</tfoot>
-		</table>
-	</body>
+frameborder ：设置是否显示框架的边框 1->显示边框  0->不显示边框
 
-运行效果如下：
+    <iframe src="http://www.taobao.com/" frameborder="0" width="400" height="200"></iframe>
 
-<img src="http://html-basic-images.qiniudn.com/section_9_text_course_3.png" style="width:220px;">
+longdesc="url" :关联一个页面，这个页面是iframe内容的详细描述
+
+name :设置iframe的名称
+
+scrolling="yes"/"no"/"auto" :iframe框架是否可以显示滚动条
+
+	<iframe src="http://www.taobao.com/" scrolling="yes" width="400" height="200"></iframe>
+
+sandbox ：限制框架内容
+
+sandbox="allow-forms" 允许iframe框架中的表单的提交
+
+sandbox="allow-scripts" 允许iframe框架中使用js脚本访问服务器内容等
+
+sandbox="allow-top-navigation" 允许iframe框架内容是由包含它的html文档导航得来的
+
+sandbox="allow-same-origin" 允许iframe框架的内容来源与包含他得html文档相同
+
+sandbox="" 表示以上四种情况全部受到限制
+
+	<iframe src="http://www.taobao.com/" sandbox="" width="400" height="200"></iframe>
+
+运行上面这段代码，效果如下：
+
+<img src="http://html-basic-images.qiniudn.com/section_11_text_course_21.png" style="width:500px;">
+
+	<iframe src="http://www.taobao.com/" sandbox="allow-same-origin allow-scripts" width="400" height="200"></iframe>
+
+运行上面这段代码，效果如下：
+
+<img src="http://html-basic-images.qiniudn.com/section_11_text_course_31.png" style="width:500px;">

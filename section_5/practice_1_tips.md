@@ -1,3 +1,11 @@
-设置div标签中的属性元素，它们的代码如下：
+标签整体布局为
 
-    <div id="test" style="position: absolute; left: 30px;top: 30px;height: 200px;width: 200px;background-color: #00aaaa;">
+	<dl>
+    	<dt>秋天的水果（普通列表）</dt>
+    </dl>
+    <p>秋天的水果（有序列表）</p>
+    <ol>
+    </ol>
+    <p>秋天的水果（无序列表）</p>
+    <ul>
+    <ul>

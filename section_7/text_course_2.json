@@ -1,19 +1,6 @@
 {
-    "title": "与List列表相关的标签",
+    "title": "给表格添加属性",
     "desc_file": true,
-    "type": "topic",
-    "order": 1,
-    "question": {
-        "content": "下面哪段代码可以实现上图内容的展示?",
-        "options": [
-            "<ul><li>测试</li></ul>",
-            "<ol><li>测试</li></ol>",
-            "<dl><dt>测试</dt></dl>",
-            "<dt><dd>测试</dd></dt>"
-        ]
-    },
-    "answer": {
-        "value": "<ol><li>测试</li></ol>",
-        "explain_file": true
-    }
+    "type": "text",
+    "order": 1
 }

@@ -1,5 +1,5 @@
 
-describe('practice-7-1', function () {
+describe('practice-9-1', function () {
 
 //    it('test', function() {
 //        expect($('#test').text()).toBe("HelloWorld!");
@@ -63,51 +63,62 @@ describe('practice-7-1', function () {
         expect($.trim(title_element.children[0].data)).toBe("我是标题");
         done();
     });
-    it("body标签的子标签有dl标签、ol标签、ul标签，dl标签的子标签有dt和两个dd标签，ol和ul标签里面分别有两个li标签", function(done){
+    it("body标签的子标签为table标签，创建基本的表格", function(done){
         var html_element_children = _(html_object[1].children).filter(html_tag);
         var body_element_children = _(html_element_children[1].children).filter(html_tag);
         console.log(body_element_children);
-        //dl标签
-        var dl_element = body_element_children[1];
-        expect(dl_element.raw).toBe("dl");
-        var dt_dl_element = dl_element.children[1];
-        expect(dt_dl_element.raw).toBe("dt");
-        expect(dt_dl_element.children[0].data).toBe("秋天的水果（普通列表）");
-        var dd_dl_element1 = dl_element.children[3];
-        expect(dd_dl_element1.raw).toBe("dd");
-        expect(dd_dl_element1.children[0].data).toBe("苹果");
-        var dd_dl_element2 = dl_element.children[5];
-        expect(dd_dl_element2.raw).toBe("dd");
-        expect(dd_dl_element2.children[0].data).toBe("香蕉");
+        //p标签
+        var table_element = body_element_children[1];
+        expect(table_element.raw).toBe("table border=\"1\"");
+//        var mark_element = p_element1.children[1];
+//        expect(mark_element.raw).toBe("mark");
+//        expect(mark_element.children[0].data).toBe("HTML");
+//
+        var tr_element1 = table_element.children[1];
+        expect(tr_element1.raw).toBe("tr");
+        var th_element1 = tr_element1.children[1];
+        expect(th_element1.raw).toBe("th");
+        expect(th_element1.children[0].data).toBe("姓名");
+        var th_element2 = tr_element1.children[3];
+        expect(th_element2.raw).toBe("th");
+        expect(th_element2.children[0].data).toBe("年龄");
+        var th_element3 = tr_element1.children[5];
+        expect(th_element3.raw).toBe("th");
+        expect(th_element3.children[0].data).toBe("单位");
+        var th_element4 = tr_element1.children[7];
+        expect(th_element4.raw).toBe("th");
+        expect(th_element4.children[0].data).toBe("工龄");
 
+        var tr_element2 = table_element.children[3];
+        expect(tr_element2.raw).toBe("tr");
+        var td1_element1 = tr_element2.children[1];
+        expect(td1_element1.raw).toBe("td");
+        expect(td1_element1.children[0].data).toBe("赵六");
+        var td1_element2 = tr_element2.children[3];
+        expect(td1_element2.raw).toBe("td");
+        expect(td1_element2.children[0].data).toBe("36");
+        var td1_element3 = tr_element2.children[5];
+        expect(td1_element3.raw).toBe("td");
+        expect(td1_element3.children[0].data).toBe("A公司");
+        var td1_element4 = tr_element2.children[7];
+        expect(td1_element4.raw).toBe("td");
+        expect(td1_element4.children[0].data).toBe("13");
 
-        var p_ol_explain_element = body_element_children[2];
-        expect(p_ol_explain_element.raw).toBe("p");
-        expect(p_ol_explain_element.children[0].data).toBe("秋天的水果（有序列表）");
+        var tr_element3 = table_element.children[5];
+        expect(tr_element3.raw).toBe("tr");
+        var td2_element1 = tr_element3.children[1];
+        expect(td2_element1.raw).toBe("td");
+        expect(td2_element1.children[0].data).toBe("王五");
+        var td2_element2 = tr_element3.children[3];
+        expect(td2_element2.raw).toBe("td");
+        expect(td2_element2.children[0].data).toBe("30");
+        var td2_element3 = tr_element3.children[5];
+        expect(td2_element3.raw).toBe("td");
+        expect(td2_element3.children[0].data).toBe("B公司");
+        var td2_element4 = tr_element3.children[7];
+        expect(td2_element4.raw).toBe("td");
+        expect(td2_element4.children[0].data).toBe("7");
 
-        //ol标签
-        var ol_element = body_element_children[3];
-        expect(ol_element.raw).toBe("ol");
-        var li_ol_element1 = ol_element.children[1];
-        expect(li_ol_element1.raw).toBe("li");
-        expect(li_ol_element1.children[0].data).toBe("苹果");
-        var li_ol_element2 = ol_element.children[3];
-        expect(li_ol_element2.raw).toBe("li");
-        expect(li_ol_element2.children[0].data).toBe("香蕉");
-
-        var p_ul_explain_element = body_element_children[4];
-        expect(p_ul_explain_element.raw).toBe("p");
-        expect(p_ul_explain_element.children[0].data).toBe("秋天的水果（无序列表）");
-
-        //ol标签
-        var ul_element = body_element_children[5];
-        expect(ul_element.raw).toBe("ul");
-        var li_ol_element1 = ul_element.children[1];
-        expect(li_ol_element1.raw).toBe("li");
-        expect(li_ol_element1.children[0].data).toBe("苹果");
-        var li_ol_element2 = ul_element.children[3];
-        expect(li_ol_element2.raw).toBe("li");
-        expect(li_ol_element2.children[0].data).toBe("香蕉");
         done();
     });
 

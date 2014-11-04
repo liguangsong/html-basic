@@ -1,22 +1,7 @@
 答案如下：
 
-    <table border="1">
-        <tr>
-            <th>姓名</th>
-            <th>年龄</th>
-            <th>单位</th>
-            <th>工龄</th>
-        </tr>
-        <tr>
-            <td>赵六</td>
-            <td>36</td>
-            <td>A公司</td>
-            <td>13</td>
-        </tr>
-        <tr>
-            <td>王五</td>
-            <td>30</td>
-            <td>B公司</td>
-            <td>7</td>
-        </tr>
-    </table>
+    <embed src="http://html-basic-images.qiniudn.com/Taylor.Swift%5BLove.Story%5D.mp4" height="200" width="200" />
+    <iframe src="http://www.codefordream.com/" sandbox="allow-same-origin allow-scripts" width="200" height="200"></iframe>
+    <br>
+    <meter id="mymeter" value="40" min="0" max="100" low="30" high="70"
+           optimum="50"></meter>

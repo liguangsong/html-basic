@@ -1,9 +1,9 @@
 {
-    "name": "不同内容格式",
+    "name": "创建信息表单",
     "type": "normal",
     "point": 200,
 
-    "simple_desc": "在这个练习里，我们练习使用各种不同的文本标记标签标记网页代码",
+    "simple_desc": "这一节，我们使用form创建一个接受个人信息的表单。",
     "desc_file": true,
     "step_desc_file": true,
     "tips_file": true,

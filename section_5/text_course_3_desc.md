@@ -1,24 +1,30 @@
-`<div>`标签的嵌套
+这一节我们学习`<figure>`标签和`<hr/>`标签。
 
-嵌套图层 代码形式如下:
+`<figure>`标签用来表示网页上一块独立的内容，可以带有标题（figcaption标签修饰figure元素的标题，一个figure标签内最多只允许放置一个figcaption标签）。figure所表示的内容可以是图片、统计图或者代码示例。
+下面的使用figure的代码：
 
-	<div class="border" style="position: absolute;width: 320px;height:300px;left:20px;top: 30px;">
-		<div id="left" class="border" style="position: relative;width:220px;height: 200px;left: 30px;top: 30px;">
-         	<p>测试名为left的div模块在html页面的最上层展示</p>
-     	</div>
-	</div>
+	<figure>
+    	<img src="http://g.hiphotos.baidu.com/image/pic/item/d01373f082025aafe289eceff8edab64034f1a5e.jpg" style="width: 200px;">
+    	<figcaption>美美的图片</figcaption>
+	</figure>
 
-页运行效果如下：
 
-<img src="http://html-basic-images.qiniudn.com/section_5_text_course_3.png" style="width:500px"/>
+效果图如下：
 
-嵌套图层可以保证子层永远位于父层之上。而且，当我们修改div1时，不会影响到div2以及整体的布局，只会改变div1，所以，在网页设计中，我们提倡使用div布局页面。
+<img src="http://html-basic-images.qiniudn.com/section_7_text_course_6.png" style="width: 300px;">
 
-    <div id="divall" style="position: absolute;width: 320px;height: 300px;left: 20px;top: 30px;">
-        <div id="div1" class="border" style="position: absolute;width: 100px;height: 100px;left: 30px;top: 30px;">
-            <p>div1在html页面上展示</p>
-        </div>
-        <div id="div2" class="border" style="position: absolute;width: 120px;height: 100px;left: 140px;top: 30px;">
-            <p>div2在html页面上展示</p>
-	    </div>
-    </div>
+接下来我们讲一下`<hr>`。`<hr/>`表示在网页中画一条横穿整个页面的水平线。
+
+使用代码如下：
+
+	<p>
+    	This is a test.
+	</p>
+	<hr/>
+	<p>
+    	This is another test.
+	</p>
+
+效果图如下：
+
+<img src="http://html-basic-images.qiniudn.com/section_7_text_course_72.png" style="width: 800px;">

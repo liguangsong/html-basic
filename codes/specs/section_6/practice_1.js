@@ -1,5 +1,5 @@
 
-describe('practice-6-1', function () {
+describe('practice-8-1', function () {
 
 //    it('test', function() {
 //        expect($('#test').text()).toBe("HelloWorld!");
@@ -63,37 +63,39 @@ describe('practice-6-1', function () {
         expect($.trim(title_element.children[0].data)).toBe("我是标题");
         done();
     });
-    it("body标签的子标签有section，section标签的子标签有h2和两个article标签，article标签内容相符", function(done){
+    it("body标签的子标签为p标签", function(done){
         var html_element_children = _(html_object[1].children).filter(html_tag);
         var body_element_children = _(html_element_children[1].children).filter(html_tag);
-        //section标签
-        var section_element = body_element_children[1];
-        expect(section_element.raw).toBe("section");
-        var h_section_element = section_element.children[1];
-        expect(h_section_element.raw).toBe("h2");
-        expect(h_section_element.children[0].data).toBe("新闻.国内专题");
-
-        var article_section_element1 = section_element.children[3];
-        expect(article_section_element1.raw).toBe("article");
-        expect(article_section_element1.children[1].raw).toBe("h3");
-        expect(article_section_element1.children[1].children[0].data).toBe("2014年南方暴雨");
-        expect(article_section_element1.children[3].raw).toBe("p");
-        expect(article_section_element1.children[3].children[0].data).toBe("2014年南方暴雨详情");
-
-        var article_section_element2 = section_element.children[5];
-        expect(article_section_element2.raw).toBe("article");
-        expect(article_section_element2.children[1].raw).toBe("h3");
-        expect(article_section_element2.children[1].children[0].data).toBe("山西官场地震");
-        expect(article_section_element2.children[3].raw).toBe("p");
-        expect(article_section_element2.children[3].children[0].data).toBe("山西官场地震详情介绍");
-
-        //nav 标签
-        var nav_element = body_element_children[2];
         console.log(body_element_children);
-        expect(nav_element.raw).toBe("nav");
-        expect(nav_element.children[1].name).toBe("a");
-        expect(nav_element.children[1].attributes.href).toBe("http://www.codefordream.com/");
-        expect(nav_element.children[1].children[0].data).toBe("Learn More About");
+        //p标签
+        var p_element1 = body_element_children[1];
+        expect(p_element1.raw).toBe("p");
+        var mark_element = p_element1.children[1];
+        expect(mark_element.raw).toBe("mark");
+        expect(mark_element.children[0].data).toBe("HTML");
+
+        var em_element = p_element1.children[3];
+        expect(em_element.raw).toBe("em");
+        expect(em_element.children[0].data).toBe("超级文本标记语言");
+
+        var bdi_element = p_element1.children[5];
+        expect(bdi_element.raw).toBe("bdi");
+        expect(bdi_element.children[0].data).toBe("浏览器");
+
+        var s_element = p_element1.children[7];
+        expect(s_element.raw).toBe("s");
+        expect(s_element.children[0].data).toBe("HTML4");
+
+        var p_element2 = body_element_children[2];
+        expect(p_element2.raw).toBe("p");
+
+        var a_element = p_element2.children[1];
+        expect(a_element.name).toBe("a");
+        expect(a_element.attributes.href).toBe("http://cn.bing.com/");
+        expect(a_element.attributes.hreflang).toBe("en");
+        expect(a_element.attributes.target).toBe("_blank");
+        expect(a_element.children[0].data).toBe("必应");
+
         done();
     });
 

@@ -1,17 +1,22 @@
 答案如下：
 
-    <dl>
-        <dt>秋天的水果（普通列表）</dt>
-        <dd>苹果</dd>
-        <dd>香蕉</dd>
-    </dl>
-    <p>秋天的水果（有序列表）</p>
-    <ol>
-        <li>苹果</li>
-        <li>香蕉</li>
-    </ol>
-    <p>秋天的水果（无序列表）</p>
-    <ul>
-        <li>苹果</li>
-        <li>香蕉</li>
-    </ul>
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>单位</th>
+            <th>工龄</th>
+        </tr>
+        <tr>
+            <td>赵六</td>
+            <td>36</td>
+            <td>A公司</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>王五</td>
+            <td>30</td>
+            <td>B公司</td>
+            <td>7</td>
+        </tr>
+    </table>

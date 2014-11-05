@@ -70,10 +70,14 @@ describe('practice-5-1', function () {
         var html_element_children = _(html_object[1].children).filter(html_tag);
         var body_element_children = _(html_element_children[1].children).filter(html_tag);
         var div1_element = body_element_children[1];
+        expect(div1_element.children[1].name).toBe("p");
+
         console.log(body_element_children);
-        console.log(div1_element.children[3]);
+
         var div3_element = div1_element.children[3];
+        expect(div3_element.children[1].name).toBe("p");
         var div2_element = body_element_children[2];
+        expect(div2_element.children[1].name).toBe("p");
 
         var div1_dom_element = $("<"+div1_element.raw+">");
         var div2_dom_element = $("<"+div2_element.raw+">");
@@ -103,7 +107,6 @@ function judge_attrrbute_is_correct(div_dom_element,arr_correct_attr)
     div_attr_string = div_attr_string.replace(reg,"");
     var arr_attr_value = div_attr_string.split(";");
     console.log(arr_attr_value);
-//    var arr_correct_attr = ["position:absolute", "height:200px", "width:200px", "background-color:#00aaaa", "left:30px", "top:30px"]
     var flag ;
     for(var i = 0; i < arr_correct_attr.length; i ++)
     {

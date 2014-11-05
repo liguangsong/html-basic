@@ -1,3 +1,3 @@
 - 写出布局专题的标签,标题为“新闻.国内专题”，格式为h2（在`<body>`标签内编写）；
 - 布局关于此专题的两篇文章，标题和内容分别为："2014年南方暴雨""2014年南方暴雨详情""山西官场地震""山西官场地震详情介绍"，文章标题使用h3，介绍使用p标签；
-- 添加导航链接到"http://www.codefordream.com" 内容为"Learn More About"。
+- 添加导航链接到"http://www.codefordream.com/" 内容为"Learn More About"。

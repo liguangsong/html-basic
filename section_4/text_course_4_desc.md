@@ -2,8 +2,8 @@
 代码如下：
 
 	<nav>
-    	More Information: <a href="http://java2s.com">Learn More About</a>
-    	<a href="http://java2s.com">Learn More About</a>
+    	More Information: <a href="http://www.codefordream.com/">Learn More About</a>
+    	<a href="http://www.codefordream.com/">Learn More About</a>
 	</nav>
 
 以下是布局文档的几种带有不同意义的标签
@@ -26,7 +26,7 @@
     </header>
     <p>正文</p>
     <footer id="mainFooter">
-        &#169;2015, java2s.com. <a href="http://java2s.com">Visit</a>
+        codefordream.com 2014. <a href="http://www.codefordream.com/">Visit</a>
     </footer>
 运行效果如下：
 

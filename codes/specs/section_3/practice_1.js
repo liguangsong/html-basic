@@ -68,6 +68,9 @@ describe('practice-5-1', function () {
         var body_element_children = _(html_element_children[1].children).filter(html_tag);
         var div_element = body_element_children[1];
 
+
+        expect(div_element.children[1].name).toBe("p");
+
         var div_dom_element = $("<"+div_element.raw+">");
 
         var arr_correct_attr = ["position:absolute", "height:200px", "width:200px", "background-color:#00aaaa", "left:30px", "top:30px"]

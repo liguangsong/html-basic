@@ -75,7 +75,7 @@ describe('practice-10-1', function () {
         expect(iframe_element.attributes.height).toBe("200");
         expect(iframe_element.attributes.sandbox).toBe("allow-same-origin allow-scripts");
         expect(iframe_element.attributes.width).toBe("300");
-        expect(iframe_element.attributes.src).toBe("http://www.codefordream.com/");
+        expect(iframe_element.attributes.src).toBe("video_intro.html");
 
         var meter_element = body_element_children[3];
         expect(meter_element.name).toBe("meter");

@@ -27,7 +27,7 @@ a是标签名，href是属性名，“http://www.codefordream.com”是属性值
 - draggable 标明元素是否可以被拖拽
 - dropzone
 - hidden
-- id 元素的id,一个页面只能有一个
+- id :元素的id,一个页面只能有一个叫做"xxx"的id
 - lang
 - spellcheck
 - style 指定元素的样式,要用css语言

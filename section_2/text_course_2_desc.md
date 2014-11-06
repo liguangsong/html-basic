@@ -13,10 +13,6 @@ meta 元素可提供有关页面的元信息（meta-information），比如针�
 
 再比如，规定浏览器用什么编码来解析这个html页面(html5)：
     
-    <meta http-equiv="charset" content="utf-8">
-
-在html4中，规定浏览器用什么编码来解析这个html页面：
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="charset" content="utf-8" />
 
 script标签常用来引入javascript和html template(这个一般不放在head里)，link则常用来引入css。它们不止用来做这些事情，但是一般也没人用它们来做别的。

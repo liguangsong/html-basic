@@ -1,9 +1,9 @@
 答案如下：
     
     <!DOCTYPE html>
-    <HTML>
+    <html>
       <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"  />
+        <meta http-equiv="charset" content="utf-8" />
         <title>我是标题</title>
       </head>
       <body>

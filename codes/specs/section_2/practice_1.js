@@ -54,8 +54,8 @@ describe('practice-2-1', function () {
         var meta_element = head_element_children[0];
 
         var meta_dom_element = $("<"+meta_element.raw+">");
-        expect(meta_dom_element.attr("http-equiv")).toBe("Content-Type");
-        expect(meta_dom_element.attr("content")).toBe("text/html; charset=utf-8");
+        expect(meta_dom_element.attr("http-equiv")).toBe("charset");
+        expect(meta_dom_element.attr("content")).toBe("utf-8");
 
 
         var title_element = head_element_children[1];

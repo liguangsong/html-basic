@@ -69,9 +69,12 @@ describe('practice-10-1', function () {
         console.log(body_element_children);
         //embed标签
         var embed_element = body_element_children[1];
+        console.log(embed_element.raw);
         expect(embed_element.raw=="embed src=\"http://html-basic-images.qiniudn.com/Taylor.Swift%5BLove.Story%5D.mp4\" height=\"200\" width=\"300\" /"||embed_element.raw=="embed src=\"http://html-basic-images.qiniudn.com/Taylor.Swift%5BLove.Story%5D.mp4\" width=\"300\" height=\"200\" /").toBe(true);
         var iframe_element = body_element_children[2];
         expect(iframe_element.name).toBe("iframe");
+        console.log(iframe_element.name);
+        console.log(iframe_element.attributes.height);
         expect(iframe_element.attributes.height).toBe("200");
 
         expect(iframe_element.attributes.sandbox=="allow-same-origin allow-scripts"||iframe_element.attributes.sandbox=="allow-scripts allow-same-origin").toBe(true);
@@ -92,7 +95,6 @@ describe('practice-10-1', function () {
         expect(progress_element.attributes.id).toBe("myprogress");
         expect(progress_element.attributes.max).toBe("80");
         expect(progress_element.attributes.value).toBe("30");
-
 
         done();
     });

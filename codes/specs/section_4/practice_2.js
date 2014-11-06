@@ -1,4 +1,4 @@
-describe('practice-6-2', function () {
+describe('practice-4-2', function () {
 
 //    it('test', function() {
 //        expect($('#test').text()).toBe("HelloWorld!");

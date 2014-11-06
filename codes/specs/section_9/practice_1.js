@@ -1,5 +1,5 @@
 
-describe('practice-10-1', function () {
+describe('practice-9-1', function () {
 
 //    it('test', function() {
 //        expect($('#test').text()).toBe("HelloWorld!");
@@ -69,12 +69,17 @@ describe('practice-10-1', function () {
         console.log(body_element_children);
         //embed标签
         var embed_element = body_element_children[1];
-        console.log(embed_element.raw);
-        expect(embed_element.raw=="embed src=\"http://html-basic-images.qiniudn.com/Taylor.Swift%5BLove.Story%5D.mp4\" height=\"200\" width=\"300\" /"||embed_element.raw=="embed src=\"http://html-basic-images.qiniudn.com/Taylor.Swift%5BLove.Story%5D.mp4\" width=\"300\" height=\"200\" /").toBe(true);
+
+        var embed_dom_element = $("<"+embed_element.raw+">");
+        console.log(embed_dom_element);
+        expect(embed_dom_element.attr("src")).toBe("http://html-basic-images.qiniudn.com/Taylor.Swift%5BLove.Story%5D.mp4");
+        expect(embed_dom_element.attr("height")).toBe("200");
+        expect(embed_dom_element.attr("width")).toBe("300");
+
+
         var iframe_element = body_element_children[2];
         expect(iframe_element.name).toBe("iframe");
-        console.log(iframe_element.name);
-        console.log(iframe_element.attributes.height);
+
         expect(iframe_element.attributes.height).toBe("200");
 
         expect(iframe_element.attributes.sandbox=="allow-same-origin allow-scripts"||iframe_element.attributes.sandbox=="allow-scripts allow-same-origin").toBe(true);

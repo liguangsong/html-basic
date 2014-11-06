@@ -1,7 +1,7 @@
 /**
  * Created by chenyu on 14-9-26.
  */
-describe('practice-5-1', function () {
+describe('practice-3-1', function () {
 
 //    it('test', function() {
 //        expect($('#test').text()).toBe("HelloWorld!");

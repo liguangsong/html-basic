@@ -1,5 +1,5 @@
 
-describe('practice-9-2', function () {
+describe('practice-7-2', function () {
 
 //    it('test', function() {
 //        expect($('#test').text()).toBe("HelloWorld!");
